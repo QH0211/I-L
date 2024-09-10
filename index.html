@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <LINK rel=StyleSheet href="css/main.css" type="text/css" media=screen>
+    <title>Eres toda mi vida </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+</head>
+
+<body>
+   
+    <style>
+
+        *, *::after,*::before{
+            margin: 0;  
+            padding: 0;
+            -webkit-box-sezing: border-box;
+            -moz-box-sezing: border-box;
+            box-sezing: border-box;
+        }
+        #barracarga{
+            background-color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            z-index:1000;
+        }
+    
+        #cargando{
+            border: 15px solid #ccc;
+            border-top-color: rgb(151, 150, 150);
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right: 0px;
+            margin:auto;
+            -webkit-animation: rotate  2s linear infinite;
+            animation: rotate  2s linear infinite;
+        }
+        @-webkit-keyframes rotate  {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    
+    </style>
+    
+    <div id="barracarga"> 
+        
+        <div id="cargando"></div>
+    
+    </div>
+    
+    <script>
+       window.onload = function(){
+          
+            var contenedor = document.getElementById('barracarga');
+            
+            contenedor.style.visibility = 'hidden';
+            
+            contenedor.style.opacity = '0'
+       }
+    </script>
+    
+
+    <div id="container">
+      
+        
+        <div class="saludo">
+            <center>
+                <audio id="demo" src="canon.mp3"></audio>
+                <script>
+                    document.getElementById('demo').play();
+                    document.getElementById('demo').pause()
+                </script>
+                <div>
+                </div>
+                <h1 class="entrada animacion-1"> Hola mi vida </h1>
+                <h2 class="inicio-h1 animacion-2">Espero en verdad que te vaya excelente en Cancun</h2>
+                <h2 class="inicio-h1 animacion-3"> te prepare esto con todo mi amor</h2>
+                <h2 class="inicio-h1 animacion-4">¿Lista? Presiona el corazon </h2>     
+                <p>
+                    <span class="animacion-5">3..</span>
+                    <span class="animacion-6">2..</span>
+                    <span class="animacion-7">1..</span>
+                </p>
+                <a onclick="cambiar()" id="play"><img src="img/corazon.png" class="animacion-8 img " ></a> 
+
+                </script>              
+            </center>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title">Santiago & Quezada <br>  <br></h1>
+            </center>
+            <h2  class=""> <span class="typed "></span> </h2>
+        </div>
+       
+    </div>
+    <div id="container3">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title" style="font-size: 3rem;"> Creditos: <br>  <br></h1>
+            </center>
+            <h2  class="">  
+                Diseño y animacion hecho por Guererro Lucas<br>
+                <a href="https://www.instagram.com/lugically_cosmic" target="_blank"> instagram  </a>
+                <a href="https://www.facebook.com/lu.de.luck" target="_blank"> facebook  </a>
+                <a href="https://www.GitHub.com/LuOfLuck" target="_blank"> GitHub  </a> <br>
+                para mas trabajos no dudes en contactame por tu red social favoritan ;3 <br>
+                <a href="https://www.freepik.es/vectores/fondo" target="_blank"> Vector de Fondo creado por freepik - www.freepik.es </a>
+            </h2>
+        </div>
+       
+    </div>
+    
+    <script>
+        cont1= document.getElementById('container');
+        cont2= document.getElementById('container2');
+        cont3= document.getElementById('container3');
+        cont2.style.display= 'none';
+        cont3.style.display= 'none';
+        
+        function cambiar(){
+            document.getElementById('demo').play();
+            cont1.style.display= 'none';
+            cont2.style.display= 'block';
+            frase1='Hola Itzel, espero que te encuentres muy bien, esta carta digital la hice con un poco de esfuerzo ';
+            frase2 = frase1 + 'ya que aun no comprendia del todo las librerias, bueno eso es un poco mas tecnico jajaja.  ';
+            frase3 = frase2 + 'Espero que te vaya muy bien en tu viaje a Cancun, se que hemos tenido muchisimos problemas pero no por ';
+            frase4 = frase3 + 'eso voy a dejar de amarte y cuidarte sabes, te lo he dicho un millon de veces y jamas me cansare de decirlo <br>';
+            frase5 = frase4 + 'eres el amor de mi vida, coincidir contigo y conectar de una manera tan hermosa ha sido lo mejor que me ha pasado ';
+            frase6 = frase5 + 'solo quiero estar contigo el resto de mi vida, no se si tu quieras lo mismo, pero al menos yo si ';
+            frase7 = frase6 + 'Se que hemos tenido problemas y muchisimos, se que muchas veces te he decepcionado pero quiero ser mejor  <br> ';
+            frase8 = frase7 + 'para ti dia a dia, me esfuerzo por ser mejor sabes, a veces siento que ya no puedo y con tan solo verte un rato  ';
+            frase9 = frase8 + 'saco fuerzas para seguir con mi vida, eres esa luz en toda mi vida de oscuridad, y no lo digo porque soy prieto ';
+            frase10 = frase9 + 'jajaja, realmente eres una chica muy hermosa, inteligente, capaz, con unos ojos tan hermosos color cafecitos, <br>';
+            frase11 = frase10 + 'podrias enamorar a cualquiera, sin embargo te conformas conmigo, a veces no soy suficiente lo se, pero trato de serlo,. <br>';
+            frase12 = frase11+ 'en fin tienes muchisimos atributos para poder estar con alguien mejor que yo.  <br>';
+            frase13 = frase12 + '-Estas hermosa <br>';
+            frase14 = frase13 + '-Tienes unos ojos tan lindos <br>';
+            frase15 = frase14 + ' -Una sonrisa como ninguna otra <br>';
+            frase2_1 = '-Me gustan muchisimo tus manos y no se porque jajaja<br>';
+            frase2_2 = frase2_1 + '-Tienes unos sentimientos muy lindos y puros (perdon por hacerte daño y que ahora me los ocultes :(( ) <br>';
+            frase2_3 = frase2_2 + ' -Se que tal vez estes cansada pero tu cuerpo es algo muy hermoso y me gusta muchisimo <br><br>';
+            frase2_4 = frase2_3 + 'Cada dia lo tomo siempre para mejorar, ser mejor que el dia anterior, pero hay veces que los problemas me ganan, <br>';
+            frase2_5 = frase2_4 + 'hay veces que solo no puedo, no quiero estar mal contigo, quiero ser tu esposo sabes, tal vez suene ridiculo, <br>';
+            frase2_6 = frase2_5 + 'tal vez solo me veas como algo temporal, tal vez no, no lo se, lo unico que deseo muchisimo es esa vida a tu lado <br>';
+            frase2_7 = frase2_6 + 'cada dia, hora, minuto, segundo que paso contigo me dan mas animos de seguir en esta vida, estoy seguro que en <br>';
+            frase2_8 = frase2_7 + 'mis vidas pasadas y en otras vidas te he amado tanto como lo hago ahora mismo. ';
+            frase2_9 = frase2_8 + 'En fin solo quiero desearte un excelente viaje, igual si sirve de algo puedes abrir esta carta cuando lo desees, ';
+            frase2_10 = frase2_9 + 'habra veces que la vida se pondra dura que sentiras que no puedes avanzar, yo diria que te quites todas esas ideas ';
+            frase2_11 = frase2_10 + 'de la cabeza ya que solo hacen que te distraigas de tus metas, recuerda que no hay plazo que no se cumpla ni fecha ';
+            frase2_12 = frase2_11 + 'que no llegue, si te propones algo estoy seguro que lo podras hacer, de cualquier manera yo estare apoyandote siempre,  ';
+            frase3_1= ' sabes que mientras este contigo jamas estaras sola, prometo amarte, cuidarte, respetarte y sobre todo serte fiel y leal ';
+            frase3_2= frase3_1 + 'hasta que la muerte nos separe, recuerda que siempre seras mi niña, mi chaparrita, mi chuek, mi vida, mi reina, <br>';
+            frase3_3= frase3_2 + '¡MI TODOOOOOOOOOOOOOOOO!, cuidate mucho y estare esperandote, igual si quieres que hablemos por mensaje o videollamada ';
+            frase3_4= frase3_3 + ' nomas avisame mi vida, estare siempre al pendiente de tu mensajito.<br> ' ;
+            frase3_5= frase3_4 + ' Te amo muchisimo mi vida<br> ';
+            frase3_6= frase3_5 + ' Atentamente: Lazaro Quezada Hernandez, con toda honestidad y amor, corazon y alma <3 <br><br><br><br>';
+            frase3_7= frase3_6 + '';
+            const typed = new Typed('.typed', {
+                strings: [frase1, frase2,frase3, frase4, frase5,frase6,frase7,frase8,frase9,
+                        frase10,frase11,frase12,frase13,frase14,frase15,
+                        frase2_1,frase2_2,frase2_3,frase2_4,frase2_5,frase2_6,frase2_7,frase2_8,
+                        frase2_9,frase2_10,frase2_11,frase2_12,
+                        frase3_1, frase3_2, frase3_3, frase3_4, frase3_5, frase3_6, frase3_7
+                    ],
+                typeSpeed: 60,
+                startDelay:2000,
+                cursorChar: '<3',
+            });
+        }
+        function creditos(){
+            cont2.style.display= 'none';
+            cont3.style.display= 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+
+    </script>
+
+
+
+
+
+    <!-- <script src="js/animaciones-2.js"></script> -->
+    <script src="js/main.js"> </script>
+    <script src="js/animaciones-1.js"> </script>
+    
+    <!-- <footer>
+       
+        <div>
+            
+        </div>
+    </footer> -->
+</body>
+</html>
+<!-- 
+
+
